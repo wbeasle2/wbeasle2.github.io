@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="quiz.html">Quiz</a>
+        </nav>
+
+    <main class="quiz-container">
+        <h1>Self-Assessment Quiz</h1>
+        <p>Test your knowledge based on the materials from this site.</p>
+
+        <form id="quiz-form">
+
+            <fieldset>
+                <legend>Question 1: What does CSS stand for?</legend>
+                <input type="text" id="q1" name="q1" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Question 2: Which HTML tag is used for a line break?</legend>
+                <label><input type="radio" name="q2" value="a" required> &lt;br&gt;</label>
+                <label><input type="radio" name="q2" value="b"> &lt;lb&gt;</label>
+                <label><input type="radio" name="q2" value="c"> &lt;break&gt;</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Question 3: What is the correct attribute for an image source?</legend>
+                <label><input type="radio" name="q3" value="a" required> source</label>
+                <label><input type="radio" name="q3" value="b"> img-src</label>
+                <label><input type="radio" name="q3" value="c"> src</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Question 4: How do you link a JavaScript file?</legend>
+                <label><input type="radio" name="q4" value="a" required> &lt;script src="..."&gt;</label>
+                <label><input type="radio" name="q4" value="b"> &lt;link rel="script" ...&gt;</label>
+                <label><input type="radio" name="q4" value="c"> &lt;js file="..."&gt;</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Question 5: Which of the following are valid HTML semantic tags? (Select all that apply)</legend>
+                <label><input type="checkbox" name="q5" value="a"> &lt;article&gt;</label>
+                <label><input type="checkbox" name="q5" value="b"> &lt;section&gt;</label>
+                <label><input type="checkbox" name="q5" value="c"> &lt;divider&gt;</label>
+                <label><input type="checkbox" name="q5" value="d"> &lt;header&gt;</label>
+            </fieldset>
+
+            <div class="button-container">
+                <button type="submit" id="submit-btn">Submit Quiz</button>
+                <button type="reset" id="reset-btn">Retake Quiz</button>
+            </div>
+        </form>
+
+        <div id="results-container"></div>
+
+    </main>
+
+    <script src="quiz.js"></script>
+
+</body>
+</html>
