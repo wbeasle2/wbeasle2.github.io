@@ -55,7 +55,7 @@
         </div>
     </nav>
 </header>
-
+<!-- Old quiz form
     <main class="quiz-container">
         <h1>Self-Assessment Quiz</h1>
         <p>Test your knowledge based on the materials from this site.</p>
@@ -105,8 +105,105 @@
         <div id="results-container"></div>
 
     </main>
+             -->
+    <!--New Bootstrap quiz adjustment-->
+    <main>
+        <div class="container my-5">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-9 col-lg-7"> 
+                    
+                    <h1>Self-Assessment Quiz</h1>
+                    <p>Test your knowledge based on the materials from this site.</p>
+    
+                    <form id="quiz-form">
+    
+                        <fieldset class="mb-4"> 
+                            <legend>Question 1: What does CSS stand for?</legend>
+                            <input type="text" id="q1" name="q1" required class="form-control">
+                        </fieldset>
+    
+                        <fieldset class="mb-4">
+                            <legend>Question 2: Which HTML tag is used for a line break?</legend>
+                            
+                            <div class="form-check">
+                                <input type="radio" name="q2" value="a" required class="form-check-input" id="q2-a">
+                                <label class="form-check-label" for="q2-a"> &lt;br&gt;</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" name="q2" value="b" class="form-check-input" id="q2-b">
+                                <label class="form-check-label" for="q2-b"> &lt;lb&gt;</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" name="q2" value="c" class="form-check-input" id="q2-c">
+                                <label class="form-check-label" for="q2-c"> &lt;break&gt;</label>
+                            </div>
+                        </fieldset>
+    
+                        <fieldset class="mb-4">
+                            <legend>Question 3: What is the correct attribute for an image source?</legend>
+                            <div class="form-check">
+                                <input type="radio" name="q3" value="a" required class="form-check-input" id="q3-a">
+                                <label class="form-check-label" for="q3-a"> source</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" name="q3" value="b" class="form-check-input" id="q3-b">
+                                <label class="form-check-label" for="q3-b"> img-src</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" name="q3" value="c" class="form-check-input" id="q3-c">
+                                <label class="form-check-label" for="q3-c"> src</label>
+                            </div>
+                        </fieldset>
+    
+                        <fieldset class="mb-4">
+                            <legend>Question 4: How do you link a JavaScript file?</legend>
+                            <div class="form-check">
+                                <input type="radio" name="q4" value="a" required class="form-check-input" id="q4-a">
+                                <label class="form-check-label" for="q4-a"> &lt;script src="..."&gt;</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" name="q4" value="b" class="form-check-input" id="q4-b">
+                                <label class="form-check-label" for="q4-b"> &lt;link rel="script" ...&gt;</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" name="q4" value="c" class="form-check-input" id="q4-c">
+                                <label class="form-check-label" for="q4-c"> &lt;js file="..."&gt;</label>
+                            </div>
+                        </fieldset>
+    
+                        <fieldset class="mb-4">
+                            <legend>Question 5: Which of the following are valid HTML semantic tags? (Select all that apply)</legend>
+                            <div class="form-check">
+                                <input type="checkbox" name="q5" value="a" class="form-check-input" id="q5-5a">
+                                <label class="form-check-label" for="q5-5a"> &lt;article&gt;</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" name="q5" value="b" class="form-check-input" id="q5-5b">
+                                <label class="form-check-label" for="q5-5b"> &lt;section&gt;</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" name="q5" value="c" class="form-check-input" id="q5-5c">
+                                <label class="form-check-label" for="q5-5c"> &lt;divider&gt;</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" name="q5" value="d" class="form-check-input" id="q5-5d">
+                                <label class="form-check-label" for="q5-5d"> &lt;header&gt;</label>
+                            </div>
+                        </fieldset>
+    
+                        <div class="button-container mt-3">
+                            <button type="submit" id="submit-btn" class="btn btn-success me-2">Submit Quiz</button>
+                            <button type="reset" id="reset-btn" class="btn btn-danger">Retake Quiz</button>
+                        </div>
+                    </form>
+    
+                    <div id="results-container" class="mt-4 p-3 border rounded shadow-sm"></div>
+    
+                </div>
+            </div>
+        </div>
+    </main>
 
-    <!--Bootstrap quiz adjustment-->
    
     <script src="quiz.js"></script>
 

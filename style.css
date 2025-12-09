@@ -15,17 +15,18 @@ body {
 }
 
 
+/* Old Quiz Container Styles 
 
-/* --- Quiz Container Styles --- */
+/* - Replaced by .container and .col-md-8 
 .quiz-container {
     max-width: 800px;
-    margin: 2rem auto; /* Centers the quiz on the page */
+    margin: 2rem auto; // Centers the quiz on the page 
     padding: 2rem;
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
-
+*/
 h1, h2, h3 {
     color: #39FF14;
 }
@@ -54,13 +55,13 @@ legend {
 /* --- Input & Label Styling --- */
 /* This makes each radio/checkbox option appear on its own line */
 label {
-    display: block;
+  /*  display: block; */ /* Using Bootstrap this is no longer needed due to Bootstrap's .form-check handles this now*/
     margin-bottom: 0.75rem;
     font-size: 1rem;
     cursor: pointer;
 }
 
-/* Styles the text input field */
+/* Styles the text input field // Replaced by Bootstrap's .form-control
 input[type="text"] {
     width: 90%;
     padding: 0.5rem;
@@ -68,6 +69,7 @@ input[type="text"] {
     border-radius: 4px;
     font-size: 1rem;
 }
+*/
 
 /* Adds a bit of space next to radio/checkbox inputs */
 input[type="radio"],
@@ -76,7 +78,7 @@ input[type="checkbox"] {
     transform: scale(1.1); /* Makes them slightly larger */
 }
 
-/* --- Button Styling --- */
+/* --- Button Styling --- 
 .button-container {
     display: flex;
     gap: 1rem;
@@ -111,7 +113,7 @@ button {
 #reset-btn:hover {
     background-color: #c0392b;
 }
-
+*/
 
 /* --- RESULTS STYLING (Required) --- */
 
