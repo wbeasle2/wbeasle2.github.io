@@ -5,15 +5,34 @@
 p{
     color: #39FF14;
 }
+/* Styles for all screen sizes */
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     line-height: 1.6;
     background-color: #000000;
-    color: #333;
+    color: white;
     margin: 0;
     padding: 0;
 }
 
+/* media queries for responsiveness */
+
+  /* Styles for screens smaller than 768px (e.g., phones) */
+  @media (max-width: 767.98px) {
+    body {
+      background-color: black;
+      color: blue;
+    }
+  }
+  
+  /* Styles for screens larger than or equal to 768px (e.g., tablets and desktops) */
+  @media (min-width: 768px) {
+    body {
+      background-color: black;
+      color : yellow;
+    }
+  }
+  
 
 /* Old Quiz Container Styles 
 
