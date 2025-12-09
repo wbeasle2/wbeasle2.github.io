@@ -55,7 +55,7 @@
         </div>
     </nav>
 </header>
-<!--
+
     <main class="quiz-container">
         <h1>Self-Assessment Quiz</h1>
         <p>Test your knowledge based on the materials from this site.</p>
@@ -105,62 +105,9 @@
         <div id="results-container"></div>
 
     </main>
--->
+
     <!--Bootstrap quiz adjustment-->
-    <main>
-        <div class="container my-5">
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-8"> 
-                    
-                    <h1>Self-Assessment Quiz</h1>
-                    <p>Test your knowledge based on the materials from this site.</p>
-    
-                    <form id="quiz-form">
-                        <fieldset class="mb-4 p-3 border rounded shadow-sm bg-light"> <legend>Question 1: What does CSS stand for?</legend>
-                            <input type="text" id="q1" name="q1" required class="form-control"> 
-                        </fieldset>
-    
-                        <fieldset class="mb-4 p-3 border rounded shadow-sm bg-light">
-                            <legend>Question 2: Which HTML tag is used for a line break?</legend>
-                            
-                            <div class="form-check">
-                                <input type="radio" name="q2" value="a" required class="form-check-input" id="q2-a">
-                                <label class="form-check-label" for="q2-a"> &lt;br&gt;</label>
-                            </div>
-                            <div class="form-check">
-                                <input type="radio" name="q2" value="b" class="form-check-input" id="q2-b">
-                                <label class="form-check-label" for="q2-b"> &lt;lb&gt;</label>
-                            </div>
-                            <div class="form-check">
-                                <input type="radio" name="q2" value="c" class="form-check-input" id="q2-c">
-                                <label class="form-check-label" for="q2-c"> &lt;break&gt;</label>
-                            </div>
-                        </fieldset>
-    
-                        <fieldset class="mb-4 p-3 border rounded shadow-sm bg-light">
-                            <legend>Question 5: Which of the following are valid HTML semantic tags? (Select all that apply)</legend>
-                            <div class="form-check">
-                                <input type="checkbox" name="q5" value="a" class="form-check-input" id="q5-a">
-                                <label class="form-check-label" for="q5-a"> &lt;article&gt;</label>
-                                <label><input type="checkbox" name="q5" value="a"> &lt;article&gt;</label>
-                                <label><input type="checkbox" name="q5" value="b"> &lt;section&gt;</label>
-                                <label><input type="checkbox" name="q5" value="c"> &lt;divider&gt;</label>
-                                <label><input type="checkbox" name="q5" value="d"> &lt;header&gt;</label>
-                            </div>
-                            </fieldset>
-    
-                        <div class="button-container">
-                            <button type="submit" id="submit-btn" class="btn btn-success me-2">Submit Quiz</button>
-                            <button type="reset" id="reset-btn" class="btn btn-danger">Retake Quiz</button>
-                        </div>
-                    </form>
-    
-                    <div id="results-container" class="mt-4 p-3 border rounded"></div>
-    
-                </div>
-            </div>
-        </div>
-    </main>
+   
     <script src="quiz.js"></script>
 
 </body>
